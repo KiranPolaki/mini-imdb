@@ -4,6 +4,7 @@ import Footer from "./components/layout/Footer";
 import Home from "./pages/Home";
 import FilmDetails from "./pages/FilmDetails";
 import SearchResults from "./pages/SearchResults";
+import NotFound from "./pages/NotFound";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/film/:id" element={<FilmDetails />} />
             <Route path="/search/:query" element={<SearchResults />} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </main>
         {/* <Footer /> */}

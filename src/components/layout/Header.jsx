@@ -20,7 +20,11 @@ const Header = () => {
   return (
     <header className="bg-slate-800/80 backdrop-blur-sm sticky top-0 z-50 py-4">
       <div className={`${container} flex justify-between items-center`}>
-        <Link to="/" className="text-2xl font-bold text-cyan-400">
+        <Link
+          to="/"
+          className="text-2xl font-bold text-cyan-400 flex items-center justify-center gap-2"
+        >
+          <img src="/logo.svg" className="size-6 items-center"></img>
           Ghilbi Movie DB
           {/* <svg
             id="logo-87"

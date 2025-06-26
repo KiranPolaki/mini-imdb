@@ -21,7 +21,7 @@ const SearchResults = () => {
 
   return (
     <div className={container}>
-      <h1 className="text-3xl font-bold mb-8">
+      <h1 className="text-3xl font-bold mb-8 py-8">
         Results for: <span className="text-cyan-400">{query}</span>
       </h1>
       {filteredFilms.length > 0 ? (
