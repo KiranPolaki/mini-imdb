@@ -9,6 +9,7 @@ const Header = () => {
   const navigate = useNavigate();
   const location = useLocation();
 
+  // TODO: try to implement the select the input field on key stroke of contol+k / command+k just selevt the search bar
   useEffect(() => {
     if (debouncedQuery) {
       navigate(`/search/${debouncedQuery}`);
@@ -20,6 +21,7 @@ const Header = () => {
   return (
     <header className="bg-slate-800/80 backdrop-blur-sm sticky top-0 z-50 py-4">
       <div className={`${container} flex justify-between items-center`}>
+        {/* TODO: When user wants to go the home page he clicks on logo after the search input has some value he cant leave the page he have to manually remove the data - i dont want that make it better by removing the users manual intervention when he clicks n the logo or home */}
         <Link
           to="/"
           className="text-2xl font-bold text-cyan-400 flex items-center justify-center gap-2"

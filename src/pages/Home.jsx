@@ -4,6 +4,7 @@ import Spinner from "../components/common/Spinner";
 import { container, gridLayout } from "../styles/reusableStyles";
 
 const Home = () => {
+  // TODO: HARD : implemention of the virtualization too for lists which are big.
   const { data: films, error, isLoading } = useGetFilmsQuery();
 
   // TODO: maybe try adding a shimmmers - let me google that for you too what is a shimmer and how to create it https://medium.com/lattice-what-is/shimmer-ui-a-better-way-to-show-loading-states-aa1f4e563d17

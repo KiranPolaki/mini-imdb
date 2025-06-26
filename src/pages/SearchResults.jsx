@@ -31,6 +31,7 @@ const SearchResults = () => {
           ))}
         </div>
       ) : (
+        // TODO: try to show something nice or give some suggestions here: ther eis some space below use ti show popular or something like that
         <p>No films found matching your search.</p>
       )}
     </div>
