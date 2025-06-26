@@ -4,7 +4,7 @@ export const gridLayout =
   "grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6";
 
 export const card =
-  "bg-slate-800 rounded-lg overflow-hidden shadow-lg hover:shadow-cyan-500/50 transition-shadow duration-300";
+  "rounded-lg shadow-2xl border-4 border-slate-700/60 transform transition-all duration-300 hover:scale-100 hover:shadow-cyan-400/20";
 
 export const cardImage = "w-full h-auto object-cover aspect-[2/3]";
 
