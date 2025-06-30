@@ -7,7 +7,10 @@ const Home = () => {
   // TODO: HARD : implemention of the virtualization too for lists which are big.
   const { data: films, error, isLoading } = useGetFilmsQuery();
 
+  // TODO: HARD Key stroke search option
+
   // TODO: maybe try adding a shimmmers - let me google that for you too what is a shimmer and how to create it https://medium.com/lattice-what-is/shimmer-ui-a-better-way-to-show-loading-states-aa1f4e563d17
+
   if (isLoading) return <Spinner />;
   if (error) return <p className={container}>Error loading films.</p>;
 
